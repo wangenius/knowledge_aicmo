@@ -183,6 +183,7 @@ class KnowledgeManager:
                     {
                         "vector": vector,
                         "text": text,
+                        "created_at": int(datetime.now().timestamp()),
                     }
                 )
 

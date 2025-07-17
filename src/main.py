@@ -12,7 +12,7 @@ def main():
 
         # 批量存储知识
         doc_ids = manager.vectorize_and_store(
-            "I am wangenius",
+            "我的公司叫letus twinkle",
             {
                 "topic": "内容",
                 "weight": 2,
