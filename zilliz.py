@@ -77,7 +77,7 @@ class ZillizManager:
     def insert_data(self, collection_name: str, data: List[Dict[str, Any]]) -> bool:
         """插入数据"""
         try:
-            result = self.client.insert(collection_name=collection_name, data=data)
+            self.client.insert(collection_name=collection_name, data=data)
             print(f"✅ 成功插入 {len(data)} 条数据到集合 '{collection_name}'")
             return True
 
